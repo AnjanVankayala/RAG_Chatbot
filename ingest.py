@@ -8,7 +8,7 @@ from langchain_community.vectorstores import Chroma
 # --- Configuration (These are constants) ---
 # ⚠️ WARNING: API key exposed in code - NOT recommended for production!
 # Get your API key from: https://makersuite.google.com/app/apikey
-GOOGLE_API_KEY = "AIzaSyDzcDh2l64fXxL0fMerOsSj0l5ou4pz3vg"  # Replace with your actual API key
+GOOGLE_API_KEY = "INSERT_YOUR_API_KEY"  # Replace with your actual API key
 
 VECTOR_DB_PATH = "./chroma_db"
 EMBEDDING_MODEL = "models/gemini-embedding-001" 
@@ -78,4 +78,5 @@ if __name__ == "__main__":
         
         # Call the refactored function
         ingest_data_from_bytes(file_bytes, os.path.basename(STATIC_DOCUMENT_PATH))
+
         print("--- Local Ingestion Finished ---")

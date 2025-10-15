@@ -11,10 +11,9 @@ from langchain_core.prompts import ChatPromptTemplate
 # Import utility for working with uploaded files (using a temporary path)
 from io import BytesIO 
 
-# --- Configuration ---
-# ⚠️ WARNING: API key exposed in code - NOT recommended for production!
+# --- Configuration --
 # Get your API key from: https://makersuite.google.com/app/apikey
-GOOGLE_API_KEY = "AIzaSyDzcDh2l64fXxL0fMerOsSj0l5ou4pz3vg"  # Replace with your actual API key
+GOOGLE_API_KEY = "INSERT_YOUR_API_KEY"  # Replace with your actual API key
 
 VECTOR_DB_PATH = "./chroma_db_uploaded" # Use a new path for clarity
 EMBEDDING_MODEL = "models/gemini-embedding-001"
@@ -147,4 +146,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
